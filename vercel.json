@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "buildCommand": "cd herens-frontend && npm install && npm run build",
+  "devCommand": "cd herens-frontend && npm run dev",
+  "installCommand": "cd herens-frontend && npm install",
+  "outputDirectory": "herens-frontend/dist",
+  "framework": "vite"
+}

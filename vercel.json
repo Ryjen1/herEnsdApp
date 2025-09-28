@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "buildCommand": "cd herens-frontend && npm run build",
-  "devCommand": "cd herens-frontend && npm run dev",
-  "installCommand": "cd herens-frontend && npm install",
-  "outputDirectory": "herens-frontend/dist",
-  "framework": "vite"
+  "builds": [
+    {
+      "src": "herens-frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/herens-frontend/$1"
+    }
+  ]
 }

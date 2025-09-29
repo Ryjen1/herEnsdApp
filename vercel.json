@@ -5,14 +5,14 @@
       "src": "herens-frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "herens-frontend/dist"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/herens-frontend/$1"
+      "dest": "/herens-frontend/dist/$1"
     }
   ]
 }

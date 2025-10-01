@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/((?!api|_next/static|_next/image|favicon.ico|assets|src).*)",
-      "dest": "/herens-frontend/dist/index.html"
+      "dest": "/dist/index.html"
     }
   ]
 }
